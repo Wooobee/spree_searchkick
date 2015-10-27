@@ -32,7 +32,8 @@ the installer will append this file to the app vendored assets here: 'vendor/ass
   line-height: 24px;
 }
 
-.tt-suggestion.tt-cursor {
+.tt-suggestion.tt-cursor,
+.tt-suggestion:hover {
   color: #fff;
   background-color: #0097cf;
 

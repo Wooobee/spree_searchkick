@@ -56,7 +56,7 @@ Spree::Product.class_eval do
 
   def self.autocomplete(keywords)
     if keywords
-      Spree::Product.search(keywords, word_middle: true, limit: 10).map do |product| { name: product.name, image: product.images.first ? product.images.first.attachment.url : "/assets/noimage/small.png", taxons: product.taxon_and_ancestors.map(&:name).slice(0,3).join(' / '), brand: product.property('Brand')}
+      Spree::Product.search(keywords, word_middle: true, limit: 10).map do |product| { name: product.name, image: product.images.first ? product.images.first.attachment.url : "/assets/noimage/small.png", taxons: product.taxon_and_ancestors.map(&:name).slice(0,3).join(' / '), brand: product.property('Brand'), id: product.id}
       end
       #Spree::Product.search(keywords, word_middle: true, limit: 10).map(&:description).map(&:strip).uniq
     else

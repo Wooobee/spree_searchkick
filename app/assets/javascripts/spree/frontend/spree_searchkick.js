@@ -43,4 +43,9 @@ $(function () {
       pending: ['<p class="text-center">Searching....</p>']
     }
   });
+
+$('#keywords').bind('typeahead:select', function(ev, suggestion) {
+  document.location.href = "/products/" + suggestion.id;
+});
+
 });
