@@ -25,6 +25,8 @@ the installer will append this file to the app vendored assets here: 'vendor/ass
   -webkit-box-shadow: 0 5px 10px rgba(0,0,0,.2);
      -moz-box-shadow: 0 5px 10px rgba(0,0,0,.2);
           box-shadow: 0 5px 10px rgba(0,0,0,.2);
+  overflow-y: auto;
+  max-height: 350px;
 }
 
 .tt-suggestion {

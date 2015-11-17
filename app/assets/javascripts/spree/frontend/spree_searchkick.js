@@ -6,7 +6,7 @@ $(function () {
   var products = new Bloodhound({
     datumTokenizer: Bloodhound.tokenizers.whitespace,
     queryTokenizer: Bloodhound.tokenizers.whitespace,
-    limit: 10,
+    limit: 20,
     //prefetch: '/autocomplete/products.json',
     remote: {
       url: '/autocomplete/products.json?keywords=%QUERY', 
@@ -34,7 +34,7 @@ $(function () {
       suggestion: Handlebars.compile('<div class="search-result"><div class="image" style="background-image: url({{image}})"></div><div class="brand">{{brand}}</div><div class="title">{{name}}</div><div class="taxons">{{taxons}}</div></div>'),
       header: [
       '<div class="center-block seach-header">',
-      '<p class="text-center altmann-blau">Altmanndental immer für Sie da!</p>',
+      '<p class="text-center altmann-blau">Wir sind jederzeit für Sie da!</p>',
       '</div>'].join('\n'), 
       footer: [
       '<div class="search-footer">',
