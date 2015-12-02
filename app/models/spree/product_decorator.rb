@@ -1,5 +1,5 @@
 Spree::Product.class_eval do
-  searchkick word_middle: [:mastersku, :sku, :name, :description, :brand, :manufacturersku], language: "German"
+  searchkick word_start: [:mastersku, :sku, :name, :description, :brand, :manufacturersku], language: "German"
 
   def search_data
     json = {
